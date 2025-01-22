@@ -77,7 +77,7 @@ const Posts: React.FC<Props> = ({ posts, setPosts, currentUser }) => {
       );
       setPosts(updatedPosts);
       localStorage.setItem("posts", JSON.stringify(updatedPosts));
-      setComments((prevComments) => ({ ...prevComments, [postId]: "" })); // Limpiar el comentario después de agregar
+      setComments((prevComments) => ({ ...prevComments, [postId]: "" }));
     }
   };
 
