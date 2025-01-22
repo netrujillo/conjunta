@@ -4,18 +4,18 @@ const teamMembers = [
   {
     name: "Mateo Pérez",
     role: "Desarrollador Frontend",
-    image: "https://media.istockphoto.com/id/1142192548/es/vector/perfil-de-avatar-hombre-silueta-de-cara-masculina-o-icono-aislado-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=O6KtgzjlrIvoGi2Cb1ZyppWKlqGL_5IXVHLUdLN33Ag=",
+    image: "https://cdn-icons-png.flaticon.com/512/43/43368.png",
     description: "Masteo es responsable de crear interfaces intuitivas y funcionales utilizando tecnologías como React y TypeScript.",
   },
   {
     name: "Nicole Trujillo",
     role: "Desarrolladora Backend",
-    image: "https://images.vexels.com/media/users/3/141471/isolated/preview/19996da19745603f166af824646f1f22-perfil-de-mujer-avatar-2.png",
+    image: "https://cdn-icons-png.flaticon.com/512/45/45943.png",
     description: "Nicole se encarga del diseño y desarrollo de la lógica backend, utilizando Node.js y bases de datos como MongoDB.",
   },
 ];
 
-const AcercaDe: React.FC = () => {
+const About: React.FC = () => {
   return (
     <div style={{ padding: "20px", textAlign: "center" }}>
       <h1>Acerca de EduConnect</h1>
@@ -34,7 +34,8 @@ const AcercaDe: React.FC = () => {
               margin: "20px",
               padding: "15px",
               borderRadius: "8px",
-              backgroundColor: "blue",
+              backgroundColor: "#4b3f35",
+              color: "white",
               width: "250px",
               textAlign: "center",
             }}
@@ -57,4 +58,4 @@ const AcercaDe: React.FC = () => {
   );
 };
 
-export default AcercaDe;
+export default About;

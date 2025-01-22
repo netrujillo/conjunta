@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home: React.FC = () => {
+const Inicio: React.FC = () => {
     return(
         <div>
             <h1>Bienvenidos a la Pagina de Inicio</h1>
@@ -8,4 +8,4 @@ const Home: React.FC = () => {
     )
 }
 
-export default Home;
+export default Inicio;

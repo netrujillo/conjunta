@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5ebe0; /* Fondo cálido */
+    color: #4b3f35; /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #3e2e26; /* Color oscuro para títulos */
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fdfaf6; /* Fondo claro del formulario */
+    border: 1px solid #d4b69a; /* Borde color cálido */
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #b89e8c; /* Borde cálido */
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #4b3f35;
+    outline: none;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fdfaf6;
+    border: 1px solid #d4b69a;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+    padding: 12px;
+    border: 1px solid #b89e8c;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #4b3f35;
+    outline: none;
+    width: 100%; /* Asegurar ancho completo */
+}
+
+.formulario button {
+    margin-top: 10px; /* Separar el botón del campo de texto */
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #a87c61;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #7f6a55;
+}
+
+.publicacion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column; /* Asegurar que el botón esté debajo */
+    gap: 10px;
+}
+
+.comentario textarea {
+    width: 100%;
+    resize: none; /* Deshabilitar el cambio de tamaño */
+}
+
+.comentario button {
+    align-self: flex-start; /* Opcional: botón alineado a la izquierda */
+}
+
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #d4b69a; /* Borde color cálido */
+}
+
+th {
+    background-color: #7f6a55; /* Fondo de las cabeceras */
+    color: white;
+}
+
+td {
+    background-color: #f0dfd0; /* Fondo suave para las celdas */
+}
+
+/* Botones Generales */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #c97d5d; /* Fondo cálido */
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a75e41; /* Fondo al hacer hover */
+}
+
+/* Lista de Usuarios */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #f0dfd0; /* Fondo suave para las celdas */
+    border: 1px solid #b89e8c; /* Borde cálido */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+ul li span {
+    font-weight: bold;
+    color: #4b3f35; /* Color oscuro para el texto */
+}
+
+ul li button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #c97d5d; /* Fondo cálido */
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+ul li button:hover {
+    background-color: #a75e41; /* Fondo al hacer hover */
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #7f6a55; /* Fondo cálido para navbar */
+    padding: 12px 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f0dfd0; /* Color suave al hacer hover en los enlaces */
+}
+
+/* Alineación de todo el contenido */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px; /* Espacio para el navbar fijo */
+}
+
+/* Para las tarjetas del equipo en "Acerca de" */
+.card {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fdfaf6;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 3px solid #ccc;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #3e2e26; /* Títulos de miembros */
+}
+
+.card p {
+    color: #4b3f35; /* Descripción del miembro */
+}
+
+.card strong {
+    color: #7f6a55; /* Resaltar el rol */
+}
+
+/* Contenedor para los miembros del equipo */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
